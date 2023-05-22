@@ -4,13 +4,13 @@ yesBtn.addEventListener('click', function (){
     alert('te quiero mucho, vamos uwu')
 });
 
-const noBtn = document.querySelector('#noBtn');
-
-noBtn.addEventListener('mouseover', function(){
-    const randomX = parseInt(Math.random()*100);
-    const randomY = parseInt(Math.random()*100);
-    noBtn.style.setProperty('top', randomY + '%');
-    noBtn.style.setProperty('left', randomX + '%');
-    noBtn.style.setProperty('transform',  `translate(-${randomX}%, -${randomY}) `);
-
+const noBtn = document.querySelector('#noBtn')
+noBtn.addEventListener('mouseover', ()=>{
+  const randomX = Math.random()*100
+  const randomY = Math.random()*100
+  noBtn.style.position = 'absolute'
+  noBtn.style.top = randomY+'%'
+  noBtn.style.left = randomX+'%'
+  noBtn.style.transform = `translate(-${randomX}%,
+  -${randomY}%)`
 })
