@@ -13,4 +13,4 @@ noBtn.addEventListener('mouseover', ()=>{
   noBtn.style.left = randomX+'%'
   noBtn.style.transform = `translate(-${randomX}%,
   -${randomY}%)`
-})
+});
